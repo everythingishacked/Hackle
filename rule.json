@@ -1,0 +1,52 @@
+[
+  {
+    "id" : 1,
+    "priority": 1,
+    "action" : {"type" : "block"},
+    "condition" : {
+      "urlFilter" : "|https://www.nytimes.com/games/wordle/*ad*",
+      "domains" : ["nytimes.com"],
+      "resourceTypes" : ["script"]
+    }
+  },
+  {
+    "id" : 2,
+    "priority": 1,
+    "action" : {"type" : "block"},
+    "condition" : {
+      "urlFilter" : "|https://*.nytimes.com*",
+      "domains" : ["a.nytimes.com", "a1.nytimes.com", "a.et.nytimes.com", "dd.nytimes.com"],
+      "resourceTypes" : ["script"]
+    }
+  },
+  {
+    "id" : 3,
+    "priority": 1,
+    "action" : {"type" : "block"},
+    "condition" : {
+      "urlFilter" : "|https://insight.adsrvr.org/track/pxl/*",
+      "domains" : ["insight.adsrvr.org"],
+      "resourceTypes" : ["script"]
+    }
+  },
+  {
+    "id" : 4,
+    "priority": 1,
+    "action" : {"type" : "block"},
+    "condition" : {
+      "urlFilter" : "|https://*.doubleclick.net/activity*",
+      "domains" : ["doubleclick.net"],
+      "resourceTypes" : ["script"]
+    }
+  },
+  {
+    "id" : 5,
+    "priority": 1,
+    "action" : {"type" : "block"},
+    "condition" : {
+      "urlFilter" : "|https://iteratehq.com/api/v1/surveys/embed*",
+      "domains" : ["iteratehq.com"],
+      "resourceTypes" : ["script"]
+    }
+  }
+]

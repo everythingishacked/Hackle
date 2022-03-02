@@ -1,0 +1,24 @@
+{
+  "name": "Wordle Helper - Hackle",
+  "description": "Hackle shows the number of solutions left when you click the word 'Wordle'. It also blocks NYT ad trackers on Wordle.",
+  "version": "0.1",
+  "manifest_version": 3,
+  "icons": { "16": "icon16.png",
+             "48": "icon48.png",
+            "128": "icon128.png" },
+  "content_scripts": [{
+    "matches": ["https://www.nytimes.com/games/wordle/*"],
+    "js": ["count.js"]
+  }],
+  "permissions": [
+    "declarativeNetRequest"
+  ],
+  "action": {},
+  "declarative_net_request": {
+    "rule_resources" : [{
+      "id": "ruleset",
+      "enabled": true,
+      "path": "rule.json"
+    }]
+  }
+}

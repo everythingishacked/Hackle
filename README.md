@@ -2,7 +2,7 @@
 
 Hackle shows the number of solutions left instead of the word 'Wordle'. It also blocks NYT ad trackers and allows replay of the day's word. Possible remaining solutions based on currently guessed letters appear in console logs.
 
-See it in action (and other Wordle shenanigans) at: https://youtu.be/rpj3OGJ--Zg
+See it in action (and other Wordle shenanigans) at: https://youtu.be/AgharwWfh60
 
 
 ### To install from source:
